@@ -5,15 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "npm link ../../../uirenderer-canvas"
+    "postinstall": "npm link ../uirenderer-canvas"
   },
   
+  "dependencies": {
+    "uirenderer-canvas": "file:../uirenderer-canvas"
+  },
   "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.3.0",
-    "vite-plugin-glsl": "^1.1.2",
-    "uirenderer-canvas": "file:../../../uirenderer-canvas"
+    "vite": "4.4.8",
+    "vite-plugin-glsl": "1.1.2"
   }
 }
